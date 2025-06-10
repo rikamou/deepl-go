@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/cluttrdev/deepl-go/internal/retry"
+	"github.com/rikamou/deepl-go/internal/retry"
 )
 
 const (

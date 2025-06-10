@@ -8,9 +8,9 @@ import (
 	"io"
 	"strings"
 
-	"github.com/cluttrdev/deepl-go/deepl"
+	"github.com/rikamou/deepl-go/deepl"
 
-	"github.com/cluttrdev/deepl-go/internal/command"
+	"github.com/rikamou/deepl-go/internal/command"
 )
 
 func NewDocumentCmd(stdout io.Writer, stderr io.Writer) *command.Command {

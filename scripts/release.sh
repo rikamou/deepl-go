@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-GITHUB_OWNER=${GITHUB_OWNER:-"cluttrdev"}
+GITHUB_OWNER=${GITHUB_OWNER:-"rikamou"}
 GITHUB_REPO=${GITHUB_REPO}
 GITHUB_TOKEN=${GITHUB_TOKEN}
 
@@ -89,7 +89,7 @@ changelog=$(awk '{ printf "%s\\n", $0}' <<-EOF
 $(awk '{ print "  - [`" $1 "`][" $1 "] " substr($0, index($0, $2)) }' <<< $changes)
 
 <!-- Link -->
-$(awk '{ print "[" $1 "]: https://github.com/cluttrdev/showdown/commit/" $1 }' <<< $changes)
+$(awk '{ print "[" $1 "]: https://github.com/rikamou/showdown/commit/" $1 }' <<< $changes)
 EOF
 )
 

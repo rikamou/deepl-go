@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/cluttrdev/deepl-go/internal/command"
+	"github.com/rikamou/deepl-go/internal/command"
 )
 
 type UsageCmdConfig struct {

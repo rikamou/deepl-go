@@ -16,7 +16,7 @@ account you can translate up to 500,000 characters/month for free.
 Using the Go tools, from inside your project:
 
 ```shell
-go get github.com/cluttrdev/deepl-go
+go get github.com/rikamou/deepl-go
 ```
 
 ### Usage
@@ -30,7 +30,7 @@ import (
     "fmt"
     "log"
     
-    "github.com/cluttrdev/deepl-go/deepl"
+    "github.com/rikamou/deepl-go/deepl"
 )
 
 func main() {
@@ -67,9 +67,9 @@ ARCH=amd64
 BIN_DIR=$HOME/.local/bin
 
 # download latest release
-RELEASE_TAG=$(curl -sSfL https://api.github.com/repos/cluttrdev/deepl-go/releases/latest | jq -r '.tag_name')
+RELEASE_TAG=$(curl -sSfL https://api.github.com/repos/rikamou/deepl-go/releases/latest | jq -r '.tag_name')
 curl \
-    -L https://github.com/cluttrdev/deepl-go/releases/download/${RELEASE_TAG}/deepl_${RELEASE_TAG}_${OS}_${ARCH}.tar.gz \
+    -L https://github.com/rikamou/deepl-go/releases/download/${RELEASE_TAG}/deepl_${RELEASE_TAG}_${OS}_${ARCH}.tar.gz \
     -o deepl.tar.gz
 
 # create install dir (if necessary)
@@ -83,7 +83,7 @@ tar -C ${BIN_DIR} -zxf deepl.tar.gz deepl
 Alternatively, you can use the Go tools:
 
 ```shell
-go install github.com/cluttrdev/deepl-go/cmd/deepl@latest
+go install github.com/rikamou/deepl-go/cmd/deepl@latest
 ```
 
 ### Usage
@@ -100,6 +100,6 @@ Bonjour, le monde !
 To get an overview of the available commands, run `deepl --help`.
 
 <!-- Links -->
-[releases]: https://github.com/cluttrdev/deepl-go/releases/latest
+[releases]: https://github.com/rikamou/deepl-go/releases/latest
 [api-docs]: https://www.deepl.com/docs-api
 [create-account]: https://www.deepl.com/pro#developer
