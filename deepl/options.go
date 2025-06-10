@@ -39,6 +39,17 @@ func WithSourceLang(value string) TranslateOption {
 	}
 }
 
+func WithOutputFormat(value string) TranslateOption {
+	return func(o *TranslateOptions) error {
+		switch value {
+		case "docx":
+			o.OutputFormat = &value
+			return nil
+		}
+		return translateOptionInvalidValueError("output_format", value)
+	}
+}
+
 // WithSplitSentences sets whether the translation engine should first split
 // the input into sentences.
 //
