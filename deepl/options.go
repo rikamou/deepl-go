@@ -15,6 +15,7 @@ type TranslateOptions struct {
 	NonSplittingTags   []*string `json:"non_splitting_tags,omitempty"`
 	SplittingTags      []*string `json:"splitting_tags,omitempty"`
 	IgnoreTags         []*string `json:"ignore_tags,omitempty"`
+	OutputFormat       *string   `json:"output_format,omitempty"`
 }
 
 func (o *TranslateOptions) Gather(opts ...TranslateOption) error {
