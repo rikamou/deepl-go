@@ -1,4 +1,4 @@
-module github.com/cluttrdev/deepl-go
+module github.com/rikamou/deepl-go
 
 go 1.21
 
